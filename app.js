@@ -1,14 +1,13 @@
 /**
- * StudySync AI - Interactive Frontend Script
- * Handles Theme Toggling, FAQ Accordion, Workflow Tabs, and Mobile Menu
+ * StudySync AI - Glassmorphism Interactive Frontend Script
+ * Handles Theme Toggling, Glass Blur Controls, FAQ Accordion, Workflow Tabs, and Mobile Menu
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Theme Switcher (Dark / Light Mode)
-  const themeToggleBtn = document.getElementById('theme-toggle');
   const root = document.documentElement;
 
-  // Check saved preference or system preference
+  // 1. Theme Switcher (Dark / Light Mode)
+  const themeToggleBtn = document.getElementById('theme-toggle');
   const savedTheme = localStorage.getItem('studysync-theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -27,7 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Interactive Workflow Tabs
+  // 2. Interactive Glass Blur Intensity Controller (UI/UX Pro Max Feature)
+  const glassCtrlBtns = document.querySelectorAll('.glass-ctrl-btn');
+  glassCtrlBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      glassCtrlBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const blurVal = btn.getAttribute('data-blur');
+      const opacityVal = btn.getAttribute('data-opacity');
+      root.style.setProperty('--glass-blur', blurVal);
+      if (opacityVal) {
+        root.style.setProperty('--glass-surface', opacityVal);
+      }
+    });
+  });
+
+  // 3. Interactive Workflow Tabs
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabPanels = document.querySelectorAll('.tab-content-panel');
 
@@ -35,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const targetTabId = btn.getAttribute('data-tab');
 
-      // Update button active state
       tabButtons.forEach(b => {
         b.classList.remove('active');
         b.setAttribute('aria-selected', 'false');
@@ -43,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       btn.setAttribute('aria-selected', 'true');
 
-      // Update panel visibility
       tabPanels.forEach(panel => {
         if (panel.id === targetTabId) {
           panel.classList.add('active');
@@ -54,21 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. FAQ Accordion Toggle
+  // 4. FAQ Accordion Toggle
   const faqItems = document.querySelectorAll('.faq-item');
-
   faqItems.forEach(item => {
     const questionBtn = item.querySelector('.faq-question');
     if (questionBtn) {
       questionBtn.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-
-        // Close other items (exclusive accordion)
-        faqItems.forEach(otherItem => {
-          otherItem.classList.remove('active');
-        });
-
-        // Toggle clicked item
+        faqItems.forEach(otherItem => otherItem.classList.remove('active'));
         if (!isActive) {
           item.classList.add('active');
         }
@@ -76,33 +81,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Mobile Menu Toggle
+  // 5. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
   const navLinks = document.querySelector('.nav-links');
-
   if (mobileMenuBtn && navLinks) {
     mobileMenuBtn.addEventListener('click', () => {
       const isVisible = navLinks.style.display === 'flex';
       navLinks.style.display = isVisible ? 'none' : 'flex';
       navLinks.style.flexDirection = 'column';
       navLinks.style.position = 'absolute';
-      navLinks.style.top = 'var(--header-height)';
-      navLinks.style.left = '0';
-      navLinks.style.right = '0';
-      navLinks.style.background = 'var(--color-card)';
+      navLinks.style.top = '78px';
+      navLinks.style.left = '16px';
+      navLinks.style.right = '16px';
+      navLinks.style.background = 'var(--glass-surface-heavy)';
+      navLinks.style.backdropFilter = 'blur(28px)';
       navLinks.style.padding = 'var(--space-24)';
-      navLinks.style.borderBottom = '1px solid var(--color-border)';
-      navLinks.style.boxShadow = 'var(--shadow-xl)';
+      navLinks.style.borderRadius = 'var(--radius-xl)';
+      navLinks.style.border = '1px solid var(--glass-border)';
+      navLinks.style.boxShadow = 'var(--glass-shadow-lg)';
     });
   }
 
-  // 5. Active Nav Link on Scroll
+  // 6. Active Nav Link on Scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinkElements = document.querySelectorAll('.nav-link');
 
   window.addEventListener('scroll', () => {
     let currentSection = '';
-    const scrollPos = window.scrollY + 100;
+    const scrollPos = window.scrollY + 120;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;

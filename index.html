@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudySync AI — AI-Native Collaborative Study Workspace</title>
-  <meta name="description" content="StudySync turns lecture audio, textbook PDFs, and research notes into instant active recall cards, collaborative study rooms, and verified exam prep.">
+  <title>StudySync AI — Glassmorphism AI Study Workspace</title>
+  <meta name="description" content="StudySync AI landing page crafted with VisionOS-inspired Frosted Glassmorphism and Aurora UI design system.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237C3AED'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
 </head>
 <body>
 
-  <!-- ==================== REUSABLE COMPONENT #1: HEADER / NAVBAR ==================== -->
+  <!-- ==================== AURORA ANIMATED BACKGROUND ORBS ==================== -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+  </div>
+  <div class="glass-grain-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== REUSABLE COMPONENT #1: FROSTED GLASS HEADER / NAVBAR ==================== -->
   <header class="site-header" id="navbar">
     <div class="container nav-container">
-      <!-- Logo Component -->
+      <!-- Brand Logo -->
       <a href="#" class="brand-logo" aria-label="StudySync AI Homepage">
         <div class="brand-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,7 +39,7 @@
           <li><a href="#features" class="nav-link">Features</a></li>
           <li><a href="#components" class="nav-link">Figma Components</a></li>
           <li><a href="#workflow" class="nav-link">How It Works</a></li>
-          <li><a href="#reviews" class="nav-link">Student Reviews</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
       </nav>
@@ -39,8 +47,8 @@
       <!-- Nav Actions -->
       <div class="nav-actions">
         <!-- Theme Switcher Button -->
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Mode">
-          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -53,13 +61,12 @@
           </svg>
         </button>
 
-        <!-- CTA Button -->
         <a href="#cta" class="btn btn-secondary btn-sm">Sign In</a>
-        <a href="#cta" class="btn btn-primary btn-sm">Get Started Free</a>
+        <a href="#cta" class="btn btn-primary btn-sm">Get Started</a>
 
-        <!-- Mobile Menu Hamburger -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -72,13 +79,12 @@
   <main>
     <!-- ==================== HERO SECTION ==================== -->
     <section class="hero-section" id="hero">
-      <div class="hero-backdrop-glow"></div>
       <div class="container hero-grid">
-        <!-- Left: Text Content -->
+        <!-- Left: Text Column -->
         <div class="hero-content">
           <div class="hero-announcement">
-            <span class="announcement-badge">New v2.4</span>
-            <span>AI Lecture Audio Transcription + Auto Flashcards</span>
+            <span class="announcement-badge">Glassmorphism UI</span>
+            <span>VisionOS Frosted Glass & Aurora Lighting</span>
           </div>
 
           <h1 class="hero-title">
@@ -86,19 +92,19 @@
           </h1>
 
           <p class="hero-subtitle">
-            StudySync converts 2-hour college lectures, research PDFs, and textbook chapters into interactive active recall flashcards, instant peer study rooms, and verified exam prep.
+            StudySync converts 2-hour university lectures, research PDFs, and textbook chapters into active-recall flashcards, interactive peer study rooms, and verified exam prep.
           </p>
 
           <div class="hero-cta-group">
             <a href="#cta" class="btn btn-primary btn-lg">
               <span>Start Studying Free</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
             <a href="#workflow" class="btn btn-secondary btn-lg">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
               </svg>
               <span>Watch 1-Min Demo</span>
@@ -118,8 +124,8 @@
           </div>
         </div>
 
-        <!-- Right: Interactive Product Mockup Preview -->
-        <div class="hero-mockup-frame" aria-label="Interactive StudySync AI Workspace Preview">
+        <!-- Right: VisionOS Glass Mockup Window -->
+        <div class="hero-mockup-frame" aria-label="Interactive StudySync Glass Workspace Preview">
           <div class="mockup-header-bar">
             <div class="window-dots">
               <span class="dot dot-red"></span>
@@ -134,7 +140,7 @@
           </div>
 
           <div class="mockup-body">
-            <!-- Context Audio Lecture Card -->
+            <!-- Audio Context Card -->
             <div class="mockup-context-card">
               <div class="context-card-header">
                 <span class="context-tag">
@@ -149,7 +155,7 @@
                 <span style="font-size: 11px; color: var(--color-muted-foreground);">Prof. Henderson</span>
               </div>
               <p class="context-quote">
-                "In Paxos consensus, nodes use a two-phase protocol: Prepare/Promise and Accept/Accepted to reach agreement even under network partition..."
+                "In Paxos consensus, nodes use Prepare/Promise and Accept/Accepted phases to guarantee agreement under network partition..."
               </p>
             </div>
 
@@ -184,70 +190,76 @@
       </div>
     </section>
 
-    <!-- ==================== DELIVERABLE: FIGMA REUSABLE COMPONENTS SHOWCASE ==================== -->
+    <!-- ==================== INTERACTIVE GLASS CONTROLLER (UI/UX PRO MAX FEATURE) ==================== -->
+    <div class="container">
+      <div class="glass-controller-banner">
+        <div class="controller-info">
+          <span class="glass-badge">UI/UX Pro Max Engine</span>
+          <span class="controller-text">Interactive Glass Blur &amp; Optical Depth Preset:</span>
+        </div>
+        <div class="glass-buttons-group">
+          <button class="glass-ctrl-btn" data-blur="12px" data-opacity="rgba(255, 255, 255, 0.45)">Light Frosted (12px)</button>
+          <button class="glass-ctrl-btn active" data-blur="24px" data-opacity="rgba(255, 255, 255, 0.65)">VisionOS Glass (24px)</button>
+          <button class="glass-ctrl-btn" data-blur="40px" data-opacity="rgba(255, 255, 255, 0.85)">Deep Aurora Frost (40px)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== DELIVERABLE: REUSABLE COMPONENTS SHOWCASE ==================== -->
     <section class="components-showcase-section" id="components">
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">College Deliverable Specification</span>
-          <h2 class="section-title">3 Reusable Components (Figma Auto Layout)</h2>
+          <h2 class="section-title">3 Reusable Components (Glassmorphism &amp; Auto Layout)</h2>
           <p class="section-subtitle">
-            Engineered according to the college assignment guidelines. Each component uses standardized spacing, typography tokens, and Auto Layout properties for easy reproduction in Figma.
+            Engineered using UI/UX Pro Max Glass tokens. Each component uses frosted glass surfaces, specular highlights, and strict Figma Auto Layout parameters.
           </p>
         </div>
 
         <div class="components-grid">
-          <!-- Component 1: Interactive Buttons -->
+          <!-- Component 1: Glass Buttons -->
           <div class="component-inspect-box">
             <div class="component-inspect-header">
-              <span class="component-name">1. Button Component Set</span>
-              <span class="figma-tag">
-                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
-                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
-                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
-                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
-                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
-                </svg>
-                Variants (4)
-              </span>
+              <span class="component-name">1. Glass Button Set</span>
+              <span class="figma-tag">Variants (4)</span>
             </div>
 
             <div class="component-live-preview">
               <div class="auto-layout-col gap-12 align-center">
-                <button class="btn btn-primary btn-sm">Primary Action</button>
-                <button class="btn btn-secondary btn-sm">Secondary Action</button>
+                <button class="btn btn-primary btn-sm">Primary Glass Action</button>
+                <button class="btn btn-secondary btn-sm">Frosted Glass Secondary</button>
               </div>
             </div>
 
             <div class="component-specs-table">
               <div class="spec-row">
+                <span class="spec-label">Style Effect:</span>
+                <span class="spec-value">Backdrop Blur 16px</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Specular Highlight:</span>
+                <span class="spec-value">inset 0 1px 1px #fff</span>
+              </div>
+              <div class="spec-row">
                 <span class="spec-label">Auto Layout:</span>
-                <span class="spec-value">Horizontal (Row)</span>
+                <span class="spec-value">Horizontal (Row), Gap 8px</span>
               </div>
               <div class="spec-row">
                 <span class="spec-label">Padding:</span>
-                <span class="spec-value">Top/Bottom 12px, L/R 24px</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Item Gap:</span>
-                <span class="spec-value">8px (Icon + Label)</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Corner Radius:</span>
-                <span class="spec-value">10px (--radius-md)</span>
+                <span class="spec-value">12px Y, 24px X</span>
               </div>
             </div>
           </div>
 
-          <!-- Component 2: Feature Card -->
+          <!-- Component 2: Frosted Feature Card -->
           <div class="component-inspect-box">
             <div class="component-inspect-header">
-              <span class="component-name">2. Feature Card Component</span>
+              <span class="component-name">2. Frosted Feature Card</span>
               <span class="figma-tag">Auto Layout Frame</span>
             </div>
 
             <div class="component-live-preview">
-              <div class="feature-card" style="padding: 16px; width: 100%; border-radius: 12px;">
+              <div class="feature-card" style="padding: 16px; width: 100%; border-radius: 14px;">
                 <div class="feature-icon-wrapper" style="width: 36px; height: 36px;">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -262,58 +274,58 @@
 
             <div class="component-specs-table">
               <div class="spec-row">
+                <span class="spec-label">Glass Surface:</span>
+                <span class="spec-value">rgba(255,255,255,0.65)</span>
+              </div>
+              <div class="spec-row">
                 <span class="spec-label">Auto Layout:</span>
-                <span class="spec-value">Vertical (Column)</span>
+                <span class="spec-value">Vertical (Column), Gap 20px</span>
               </div>
               <div class="spec-row">
                 <span class="spec-label">Padding:</span>
-                <span class="spec-value">32px all around</span>
+                <span class="spec-value">32px all sides</span>
               </div>
               <div class="spec-row">
-                <span class="spec-label">Item Gap:</span>
-                <span class="spec-value">20px (--space-20)</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Sizing:</span>
-                <span class="spec-value">Fill Container (W)</span>
+                <span class="spec-label">Corner Radius:</span>
+                <span class="spec-value">26px (--radius-xl)</span>
               </div>
             </div>
           </div>
 
-          <!-- Component 3: Navigation Bar -->
+          <!-- Component 3: Navigation Header -->
           <div class="component-inspect-box">
             <div class="component-inspect-header">
-              <span class="component-name">3. Header / Nav Component</span>
-              <span class="figma-tag">Fixed Desktop 1440px</span>
+              <span class="component-name">3. Glass Navigation Bar</span>
+              <span class="figma-tag">Fixed 1440px Frame</span>
             </div>
 
             <div class="component-live-preview">
-              <div style="background: var(--color-background); border: 1px solid var(--color-border); border-radius: 8px; padding: 10px 14px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+              <div style="background: var(--glass-surface); border: 1px solid var(--glass-border); border-radius: 12px; padding: 10px 14px; width: 100%; display: flex; align-items: center; justify-content: space-between; backdrop-filter: blur(20px);">
                 <span style="font-weight: 800; font-size: 13px; color: var(--color-primary);">StudySync</span>
                 <div style="display: flex; gap: 8px; font-size: 11px; color: var(--color-muted-foreground);">
                   <span>Features</span>
                   <span>Demo</span>
                 </div>
-                <button class="btn btn-primary" style="padding: 4px 10px; font-size: 10px; border-radius: 4px;">Join</button>
+                <button class="btn btn-primary" style="padding: 4px 10px; font-size: 10px; border-radius: 6px;">Join</button>
               </div>
             </div>
 
             <div class="component-specs-table">
+              <div class="spec-row">
+                <span class="spec-label">Backdrop Filter:</span>
+                <span class="spec-value">blur(28px) saturate(200%)</span>
+              </div>
               <div class="spec-row">
                 <span class="spec-label">Auto Layout:</span>
                 <span class="spec-value">Horizontal (Space-Between)</span>
               </div>
               <div class="spec-row">
                 <span class="spec-label">Frame Height:</span>
-                <span class="spec-value">76px (Fixed)</span>
+                <span class="spec-value">68px (Floating Pill)</span>
               </div>
               <div class="spec-row">
                 <span class="spec-label">Padding:</span>
-                <span class="spec-value">Left/Right 80px</span>
-              </div>
-              <div class="spec-row">
-                <span class="spec-label">Alignment:</span>
-                <span class="spec-value">Center Align (Y)</span>
+                <span class="spec-value">Left/Right 24px</span>
               </div>
             </div>
           </div>
@@ -321,22 +333,22 @@
       </div>
     </section>
 
-    <!-- ==================== FEATURES SECTION (3+ CARDS DELIVERABLE) ==================== -->
+    <!-- ==================== FEATURES SECTION (3+ FROSTED CARDS DELIVERABLE) ==================== -->
     <section class="features-section" id="features">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Built for Academic Excellence</span>
+          <span class="section-eyebrow">Academic Cognitive Suite</span>
           <h2 class="section-title">Everything You Need to Ace Your Semester</h2>
           <p class="section-subtitle">
-            Designed specifically around college cognitive workflows: audio capture, synthesis, active recall, and collaborative study circles.
+            Harnessing multi-layer glassmorphism depth to organize complex academic workflows: audio transcription, interactive canvas, and verifiable citations.
           </p>
         </div>
 
         <div class="features-grid">
-          <!-- Feature Card 1 -->
+          <!-- Card 1 -->
           <article class="feature-card">
             <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 2a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
                 <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
                 <line x1="12" y1="19" x2="12" y2="23"></line>
@@ -347,15 +359,15 @@
               <span class="feature-badge-pill">Audio AI Engine</span>
               <h3 class="feature-title">Lecture-to-Flashcard Synthesis</h3>
               <p class="feature-desc">
-                Record or upload any lecture audio. StudySync eliminates professor tangents and produces Spaced Repetition flashcards within 90 seconds.
+                Upload 2-hour lecture recordings. StudySync eliminates professor banter and produces active-recall flashcards with spaced repetition within 90 seconds.
               </p>
             </div>
           </article>
 
-          <!-- Feature Card 2 -->
+          <!-- Card 2 -->
           <article class="feature-card">
             <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -371,10 +383,10 @@
             </div>
           </article>
 
-          <!-- Feature Card 3 -->
+          <!-- Card 3 -->
           <article class="feature-card">
             <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -394,7 +406,7 @@
       </div>
     </section>
 
-    <!-- ==================== INTERACTIVE WORKFLOW TABS ==================== -->
+    <!-- ==================== WORKFLOW TABS SECTION ==================== -->
     <section class="workflow-section" id="workflow">
       <div class="container">
         <div class="section-header">
@@ -406,40 +418,32 @@
         </div>
 
         <div class="tabs-wrapper">
-          <!-- Tab Navigation -->
           <div class="tab-nav" role="tablist">
-            <button class="tab-btn active" role="tab" data-tab="tab-1" aria-selected="true">
-              Step 1: Capture & Upload
-            </button>
-            <button class="tab-btn" role="tab" data-tab="tab-2" aria-selected="false">
-              Step 2: AI Knowledge Graph
-            </button>
-            <button class="tab-btn" role="tab" data-tab="tab-3" aria-selected="false">
-              Step 3: Peer Exam Simulation
-            </button>
+            <button class="tab-btn active" role="tab" data-tab="tab-1" aria-selected="true">Step 1: Capture & Upload</button>
+            <button class="tab-btn" role="tab" data-tab="tab-2" aria-selected="false">Step 2: AI Knowledge Graph</button>
+            <button class="tab-btn" role="tab" data-tab="tab-3" aria-selected="false">Step 3: Peer Exam Simulation</button>
           </div>
 
-          <!-- Tab Content 1 -->
           <div class="tab-content-panel active" id="tab-1" role="tabpanel">
             <div class="tab-text-side">
               <span class="feature-badge-pill">01 / Instant Ingestion</span>
               <h3 class="tab-title">Drop your lecture recording, slides, or PDF</h3>
               <p class="tab-desc">
-                Simply drag and drop lecture audio files (MP3/M4A), messy handwritten iPad notes, or 80-page professor slide decks. StudySync's multi-modal engine structures the material instantly.
+                Simply drag and drop lecture audio files (MP3/M4A), messy handwritten iPad notes, or 80-page professor slide decks. StudySync structures the material instantly.
               </p>
               <ul class="tab-list">
                 <li class="tab-list-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Whisper-powered speech-to-text with mathematical notation recognition
+                  Whisper speech-to-text with mathematical formula recognition
                 </li>
                 <li class="tab-list-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Automatic removal of banter and classroom administrative pauses
+                  Automatic removal of classroom banter and pauses
                 </li>
               </ul>
             </div>
             <div class="tab-visual-side">
-              <div style="background: var(--color-background); border: 2px dashed var(--color-border); border-radius: 12px; padding: 32px; text-align: center;">
+              <div style="background: var(--glass-surface-subtle); border: 2px dashed var(--glass-border); border-radius: 16px; padding: 32px; text-align: center;">
                 <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--color-primary)" stroke-width="1.5" style="margin: 0 auto 12px auto;">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <polyline points="17 8 12 3 7 8"></polyline>
@@ -454,18 +458,17 @@
             </div>
           </div>
 
-          <!-- Tab Content 2 -->
           <div class="tab-content-panel" id="tab-2" role="tabpanel">
             <div class="tab-text-side">
               <span class="feature-badge-pill">02 / Deep Understanding</span>
               <h3 class="tab-title">Interactive Mind Maps & Active Recall Decks</h3>
               <p class="tab-desc">
-                StudySync organizes concepts into hierarchical mind maps showing how foundational formulas connect to complex problem-solving patterns.
+                Concepts are visually mapped into interconnected knowledge graphs, showing foundational theorems linked to actual midterm questions.
               </p>
               <ul class="tab-list">
                 <li class="tab-list-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  Spaced Repetition scheduling based on the SuperMemo-2 algorithm
+                  Spaced Repetition scheduling based on SuperMemo-2
                 </li>
                 <li class="tab-list-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -475,25 +478,24 @@
             </div>
             <div class="tab-visual-side">
               <div class="auto-layout-col gap-12">
-                <div style="padding: 12px; background: var(--color-background); border-radius: 8px; border-left: 4px solid var(--color-primary);">
+                <div style="padding: 14px; background: var(--glass-surface-subtle); border-radius: 10px; border-left: 4px solid var(--color-primary); box-shadow: var(--glass-specular);">
                   <span style="font-size: 12px; font-weight: 700; color: var(--color-primary);">Theorem 4.2</span>
-                  <p style="font-size: 13px; color: var(--color-foreground);">Dijkstra's Algorithm greedy choice property proof</p>
+                  <p style="font-size: 13px; color: var(--color-foreground); margin-top: 4px;">Dijkstra's Algorithm greedy choice property proof</p>
                 </div>
-                <div style="padding: 12px; background: var(--color-background); border-radius: 8px; border-left: 4px solid var(--color-accent);">
+                <div style="padding: 14px; background: var(--glass-surface-subtle); border-radius: 10px; border-left: 4px solid var(--color-accent); box-shadow: var(--glass-specular);">
                   <span style="font-size: 12px; font-weight: 700; color: var(--color-accent);">Key Complexity</span>
-                  <p style="font-size: 13px; color: var(--color-foreground);">O((V + E) log V) with Fibonacci Heap implementation</p>
+                  <p style="font-size: 13px; color: var(--color-foreground); margin-top: 4px;">O((V + E) log V) with Fibonacci Heap implementation</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Tab Content 3 -->
           <div class="tab-content-panel" id="tab-3" role="tabpanel">
             <div class="tab-text-side">
               <span class="feature-badge-pill">03 / Group Mastery</span>
               <h3 class="tab-title">Simulate Past Exams with Friends</h3>
               <p class="tab-desc">
-                Generate tailored mock exams modeled after your university's historical question styles. Compete on leaderboards or co-solve challenging multi-step derivations in real time.
+                Generate tailored mock exams modeled after your university's historical question formats. Compete on leaderboards or co-solve derivations in real time.
               </p>
               <ul class="tab-list">
                 <li class="tab-list-item">
@@ -507,13 +509,13 @@
               </ul>
             </div>
             <div class="tab-visual-side">
-              <div style="padding: 20px; background: var(--color-background); border-radius: 12px; text-align: center;">
-                <span style="font-size: 32px; font-weight: 800; color: var(--color-primary);">94.8%</span>
-                <p style="font-size: 13px; font-weight: 600; color: var(--color-foreground); margin-top: 4px;">Group Exam Readiness Score</p>
-                <div style="height: 8px; background: var(--color-border); border-radius: 4px; overflow: hidden; margin: 12px 0;">
+              <div style="padding: 24px; background: var(--glass-surface-subtle); border-radius: 16px; text-align: center; box-shadow: var(--glass-specular);">
+                <span style="font-size: 36px; font-weight: 800; color: var(--color-primary);">94.8%</span>
+                <p style="font-size: 14px; font-weight: 600; color: var(--color-foreground); margin-top: 4px;">Group Exam Readiness Score</p>
+                <div style="height: 8px; background: var(--glass-border); border-radius: 4px; overflow: hidden; margin: 16px 0;">
                   <div style="width: 94.8%; height: 100%; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
                 </div>
-                <span style="font-size: 12px; color: var(--color-success); font-weight: 600;">Ready for Finals Week</span>
+                <span style="font-size: 12px; color: var(--color-success); font-weight: 700;">Ready for Finals Week</span>
               </div>
             </div>
           </div>
@@ -533,11 +535,8 @@
         </div>
 
         <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
           <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
+            <div class="testimonial-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
             <p class="testimonial-text">
               "StudySync changed my semester. Taking Organic Chemistry with 3-hour lectures felt impossible until this app automatically created practice reaction mechanisms with page-numbered textbook citations."
             </p>
@@ -550,11 +549,8 @@
             </div>
           </div>
 
-          <!-- Testimonial 2 -->
           <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
+            <div class="testimonial-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
             <p class="testimonial-text">
               "The real-time peer study room feature saved our group project. We could query the same academic papers together, and the AI highlighted exactly where our derivations clashed."
             </p>
@@ -567,19 +563,16 @@
             </div>
           </div>
 
-          <!-- Testimonial 3 -->
           <div class="testimonial-card">
-            <div class="testimonial-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
+            <div class="testimonial-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
             <p class="testimonial-text">
-              "Figma's Auto Layout interface inspired this clean UI design, and using the actual platform makes studying feel like playing a game. Went from a 3.1 to 3.8 GPA in one semester!"
+              "The glassmorphic design looks incredible and feels like VisionOS. Using this platform makes studying feel rewarding. Went from a 3.1 to 3.8 GPA in one semester!"
             </p>
             <div class="student-info">
               <div class="student-avatar">DM</div>
               <div>
                 <p class="student-name">Dev Mehta</p>
-                <p class="student-college">Economics & Data Science, Final Year</p>
+                <p class="student-college">Economics &amp; Data Science, Final Year</p>
               </div>
             </div>
           </div>
@@ -599,28 +592,22 @@
         </div>
 
         <div class="faq-list">
-          <!-- FAQ 1 -->
           <div class="faq-item active">
             <button class="faq-question">
               <span>How does StudySync ensure AI doesn't hallucinate answers?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
             <div class="faq-answer">
               <p>
-                StudySync uses strict Retrieval-Augmented Generation (RAG). Every single flashcard, summary, and quiz question is grounded in your uploaded lecture recordings and textbook PDFs. We provide exact page number and audio timestamp citations with every generated answer.
+                StudySync uses strict Retrieval-Augmented Generation (RAG). Every single flashcard, summary, and quiz question is grounded in your uploaded lecture recordings and textbook PDFs with exact page number and audio timestamp citations.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 2 -->
           <div class="faq-item">
             <button class="faq-question">
               <span>Is StudySync free for university students?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
             <div class="faq-answer">
               <p>
@@ -629,28 +616,22 @@
             </div>
           </div>
 
-          <!-- FAQ 3 -->
           <div class="faq-item">
             <button class="faq-question">
-              <span>How was this UI/UX design crafted in Figma?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <span>How was this Glassmorphism style engineered with UI/UX Pro Max?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
             <div class="faq-answer">
               <p>
-                This project was created using Figma's Auto Layout framework following strict UI/UX Pro Max intelligence guidelines. It features an 8pt vertical grid, WCAG AA compliant color contrast (7:1 for text), and an atomic component hierarchy (Buttons, Feature Cards, Navigation Bars) with reusable Figma variants.
+                This project implements the official <code>glassmorphism</code> and <code>spatial-ui-visionos</code> tokens from the UI/UX Pro Max design database: backdrop blur (24px), optical saturation (190%), specular inner highlights, and ambient floating Aurora orbs, while maintaining strict WCAG 2.1 AA text contrast.
               </p>
             </div>
           </div>
 
-          <!-- FAQ 4 -->
           <div class="faq-item">
             <button class="faq-question">
               <span>Can I export flashcards to Anki or Quizlet?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
             <div class="faq-answer">
               <p>
@@ -662,7 +643,7 @@
       </div>
     </section>
 
-    <!-- ==================== CALL TO ACTION SECTION ==================== -->
+    <!-- ==================== CTA BANNER ==================== -->
     <section class="cta-section" id="cta">
       <div class="container">
         <div class="cta-banner">
@@ -673,7 +654,7 @@
             </p>
             <div class="cta-actions">
               <a href="#" class="btn btn-accent btn-lg">Create Free Student Account</a>
-              <a href="#components" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">View Component Specs</a>
+              <a href="#components" class="btn btn-secondary btn-lg">View Component Specs</a>
             </div>
           </div>
         </div>
@@ -685,24 +666,18 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand column -->
         <div class="footer-brand">
           <a href="#" class="brand-logo">
             <div class="brand-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                <path d="M2 17l10 5 10-5"></path>
-                <path d="M2 12l10 5 10-5"></path>
-              </svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
             </div>
             <span class="brand-text">Study<span>Sync</span></span>
           </a>
           <p>
-            AI-native collaborative learning workspace designed with Figma Auto Layout and UI/UX Pro Max design intelligence for university students.
+            AI-native collaborative learning workspace designed with VisionOS Frosted Glassmorphism and UI/UX Pro Max design intelligence for university students.
           </p>
         </div>
 
-        <!-- Product links -->
         <div class="footer-col">
           <h4 class="footer-col-title">Product</h4>
           <ul class="footer-links">
@@ -713,32 +688,30 @@
           </ul>
         </div>
 
-        <!-- Resources links -->
         <div class="footer-col">
           <h4 class="footer-col-title">Resources</h4>
           <ul class="footer-links">
-            <li><a href="DESIGN_SYSTEM.md" class="footer-link">Design System Tokens</a></li>
+            <li><a href="DESIGN_SYSTEM.md" class="footer-link">Glass Design Tokens</a></li>
             <li><a href="FIGMA_GUIDE.md" class="footer-link">Figma Auto Layout Guide</a></li>
             <li><a href="README.md" class="footer-link">College Project Report</a></li>
             <li><a href="#faq" class="footer-link">Academic Honesty</a></li>
           </ul>
         </div>
 
-        <!-- Legal links -->
         <div class="footer-col">
           <h4 class="footer-col-title">College Project</h4>
           <ul class="footer-links">
             <li><span class="footer-link" style="color: var(--color-foreground); font-weight: 600;">Course: UI/UX Using Figma</span></li>
             <li><span class="footer-link">Platform: IPS University</span></li>
+            <li><span class="footer-link">Style: Glassmorphism / Aurora UI</span></li>
             <li><span class="footer-link">Status: Submission Ready</span></li>
-            <li><span class="footer-link">License: MIT</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>© 2026 StudySync AI. Crafted for the UI/UX College Assignment.</p>
-        <p>Built with Figma Auto Layout Principles • Powered by UI/UX Pro Max</p>
+        <p>Built with Figma Auto Layout &amp; VisionOS Glassmorphism • Powered by UI/UX Pro Max</p>
       </div>
     </div>
   </footer>
