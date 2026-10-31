@@ -1,0 +1,21 @@
+{
+  "name": "studysync-uiux-project",
+  "version": "1.0.0",
+  "description": "StudySync AI - College UI/UX Assignment using Figma Auto Layout & VisionOS Glassmorphism",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "ui-ux",
+    "figma",
+    "auto-layout",
+    "glassmorphism",
+    "college-project",
+    "landing-page",
+    "design-system"
+  ],
+  "author": "IPS College UI/UX Student",
+  "license": "MIT"
+}
