@@ -1,37 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960" style="background:#FAF5FF; font-family:'Inter', system-ui, -apple-system, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960" style="background:#F0F9FF; font-family:'Inter', system-ui, -apple-system, sans-serif;">
   <defs>
-    <!-- Gradients -->
+    <!-- Light Blue & White Gradients -->
     <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED" />
-      <stop offset="100%" stop-color="#6D28D9" />
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0891B2" />
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
       <stop offset="100%" stop-color="#0284C7" />
     </linearGradient>
     <linearGradient id="heroTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED" />
-      <stop offset="50%" stop-color="#A78BFA" />
-      <stop offset="100%" stop-color="#0891B2" />
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="60%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0369A1" />
     </linearGradient>
     <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7C3AED" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284C7" flood-opacity="0.08" />
     </filter>
   </defs>
 
-  <!-- ==================== HEADER (Auto Layout Horizontal: Height 76px, Padding 80px) ==================== -->
-  <rect x="0" y="0" width="1440" height="76" fill="#FAF5FF" stroke="#DDD6FE" stroke-width="1" />
+  <!-- ==================== HEADER (1440px Frame, Height 76px, Light Blue & White) ==================== -->
+  <rect x="0" y="0" width="1440" height="76" fill="#FFFFFF" fill-opacity="0.85" stroke="#BAE6FD" stroke-width="1" />
   
   <!-- Brand Logo -->
   <g transform="translate(80, 20)">
     <rect width="36" height="36" rx="10" fill="url(#primaryGrad)" />
     <path d="M18 10L8 15l10 5 10-5-10-5zM8 22l10 5 10-5M8 18l10 5 10-5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(0, -3)" />
-    <text x="48" y="25" font-size="20" font-weight="800" fill="#1E1B4B" letter-spacing="-0.5">Study<tspan fill="#7C3AED">Sync</tspan></text>
+    <text x="48" y="25" font-size="20" font-weight="800" fill="#082F49" letter-spacing="-0.5">Study<tspan fill="#0284C7">Sync</tspan></text>
   </g>
 
   <!-- Nav Links -->
   <g transform="translate(540, 44)" font-size="15" font-weight="500" fill="#475569">
-    <text x="0" y="0" fill="#7C3AED" font-weight="600">Features</text>
+    <text x="0" y="0" fill="#0284C7" font-weight="700">Features</text>
     <text x="100" y="0">Figma Components</text>
     <text x="270" y="0">How It Works</text>
     <text x="400" y="0">Reviews</text>
@@ -40,22 +40,22 @@
 
   <!-- Header CTA Buttons -->
   <g transform="translate(1190, 20)">
-    <rect width="80" height="36" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-    <text x="40" y="23" font-size="13" font-weight="600" fill="#1E1B4B" text-anchor="middle">Sign In</text>
+    <rect width="80" height="36" rx="8" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+    <text x="40" y="23" font-size="13" font-weight="600" fill="#082F49" text-anchor="middle">Sign In</text>
     <rect x="90" width="140" height="36" rx="8" fill="url(#primaryGrad)" />
     <text x="160" y="23" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Get Started Free</text>
   </g>
 
-  <!-- ==================== HERO SECTION ==================== -->
+  <!-- ==================== HERO SECTION (LIGHT BLUE & WHITE) ==================== -->
   <g transform="translate(80, 140)">
     <!-- Announcement Pill -->
-    <rect width="360" height="32" rx="16" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-    <rect x="4" y="4" width="70" height="24" rx="12" fill="#7C3AED" />
-    <text x="39" y="20" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">NEW V2.4</text>
-    <text x="85" y="21" font-size="13" font-weight="500" fill="#475569">AI Lecture Audio Synthesis</text>
+    <rect width="370" height="32" rx="16" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+    <rect x="4" y="4" width="80" height="24" rx="12" fill="#0284C7" />
+    <text x="44" y="20" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">LIGHT BLUE</text>
+    <text x="96" y="21" font-size="13" font-weight="500" fill="#0369A1">Clean Ice &amp; White Palette</text>
 
     <!-- Main H1 Headline -->
-    <text x="0" y="90" font-size="46" font-weight="800" fill="#1E1B4B" letter-spacing="-1">
+    <text x="0" y="90" font-size="46" font-weight="800" fill="#082F49" letter-spacing="-1">
       Master Any Course in
     </text>
     <text x="0" y="145" font-size="46" font-weight="800" fill="url(#heroTitleGrad)" letter-spacing="-1">
@@ -64,7 +64,7 @@
 
     <!-- Subtitle -->
     <text x="0" y="195" font-size="17" font-weight="400" fill="#475569">
-      <tspan x="0" dy="0">StudySync converts 2-hour college lectures and textbook PDFs into active recall</tspan>
+      <tspan x="0" dy="0">StudySync converts 2-hour university lectures and textbook PDFs into active recall</tspan>
       <tspan x="0" dy="28">flashcards, collaborative peer study rooms, and verified exam prep.</tspan>
     </text>
 
@@ -73,81 +73,81 @@
       <rect width="210" height="48" rx="10" fill="url(#primaryGrad)" />
       <text x="105" y="30" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Start Studying Free →</text>
 
-      <rect x="230" width="180" height="48" rx="10" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <text x="320" y="30" font-size="15" font-weight="600" fill="#1E1B4B" text-anchor="middle">▶ Watch 1-Min Demo</text>
+      <rect x="230" width="180" height="48" rx="10" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+      <text x="320" y="30" font-size="15" font-weight="600" fill="#082F49" text-anchor="middle">▶ Watch 1-Min Demo</text>
     </g>
 
     <!-- Social Proof -->
     <g transform="translate(0, 340)">
-      <circle cx="16" cy="16" r="16" fill="#EDE9FE" stroke="#FAF5FF" stroke-width="2" />
-      <text x="16" y="20" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">AK</text>
-      <circle cx="40" cy="16" r="16" fill="#DDD6FE" stroke="#FAF5FF" stroke-width="2" />
-      <text x="40" y="20" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">MR</text>
-      <circle cx="64" cy="16" r="16" fill="#C4B5FD" stroke="#FAF5FF" stroke-width="2" />
-      <text x="64" y="20" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">PS</text>
+      <circle cx="16" cy="16" r="16" fill="#E0F2FE" stroke="#FFFFFF" stroke-width="2" />
+      <text x="16" y="20" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">AK</text>
+      <circle cx="40" cy="16" r="16" fill="#BAE6FD" stroke="#FFFFFF" stroke-width="2" />
+      <text x="40" y="20" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">MR</text>
+      <circle cx="64" cy="16" r="16" fill="#7DD3FC" stroke="#FFFFFF" stroke-width="2" />
+      <text x="64" y="20" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">PS</text>
       <text x="96" y="21" font-size="13" font-weight="500" fill="#475569">
-        Trusted by <tspan font-weight="700" fill="#1E1B4B">45,000+ students</tspan> across 120+ top universities
+        Trusted by <tspan font-weight="700" fill="#082F49">45,000+ students</tspan> across 120+ top universities
       </text>
     </g>
   </g>
 
-  <!-- ==================== HERO PRODUCT MOCKUP (Right Column) ==================== -->
+  <!-- ==================== FROSTED GLASS MOCKUP (Right Column) ==================== -->
   <g transform="translate(740, 130)" filter="url(#cardShadow)">
-    <rect width="620" height="380" rx="18" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
+    <rect width="620" height="380" rx="18" fill="#FFFFFF" fill-opacity="0.9" stroke="#BAE6FD" stroke-width="1.5" />
     
     <!-- Window Bar -->
-    <path d="M0 18 Q0 0 18 0 L602 0 Q620 0 620 18 L620 42 L0 42 Z" fill="#ECEEF9" />
+    <path d="M0 18 Q0 0 18 0 L602 0 Q620 0 620 18 L620 42 L0 42 Z" fill="#E0F2FE" />
     <circle cx="20" cy="21" r="5" fill="#EF4444" />
     <circle cx="36" cy="21" r="5" fill="#F59E0B" />
     <circle cx="52" cy="21" r="5" fill="#10B981" />
-    <text x="310" y="26" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">StudySync Workspace — CS101: Distributed Systems</text>
-    <rect x="530" y="12" width="74" height="20" rx="10" fill="#CFFAFE" />
-    <text x="567" y="26" font-size="10" font-weight="700" fill="#0891B2" text-anchor="middle">● LIVE SYNC</text>
+    <text x="310" y="26" font-size="12" font-weight="600" fill="#082F49" text-anchor="middle">StudySync Workspace — CS101: Distributed Systems</text>
+    <rect x="530" y="12" width="74" height="20" rx="10" fill="#BAE6FD" />
+    <text x="567" y="26" font-size="10" font-weight="700" fill="#0284C7" text-anchor="middle">● LIVE SYNC</text>
 
     <!-- Context Card (Audio Snippet) -->
     <g transform="translate(24, 60)">
-      <rect width="572" height="74" rx="10" fill="#FAF5FF" stroke="#DDD6FE" stroke-width="1" />
-      <text x="16" y="26" font-size="12" font-weight="700" fill="#7C3AED">🎙️ Lecture 14 Audio Snippet (32:15) — Prof. Henderson</text>
-      <text x="16" y="52" font-size="13" font-weight="400" fill="#1E1B4B">"In Paxos consensus, nodes use Prepare/Promise and Accept/Accepted phases..."</text>
+      <rect width="572" height="74" rx="10" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1" />
+      <text x="16" y="26" font-size="12" font-weight="700" fill="#0284C7">🎙️ Lecture 14 Audio Snippet (32:15) — Prof. Henderson</text>
+      <text x="16" y="52" font-size="13" font-weight="400" fill="#082F49">"In Paxos consensus, nodes use Prepare/Promise and Accept/Accepted phases..."</text>
     </g>
 
     <!-- AI Synthesis Box -->
     <g transform="translate(24, 150)">
-      <rect width="572" height="96" rx="12" fill="#FAF5FF" stroke="#A78BFA" stroke-width="1.5" />
-      <text x="16" y="28" font-size="12" font-weight="800" fill="#7C3AED">⚡ STUDYSYNC AI SYNTHESIS</text>
-      <text x="16" y="54" font-size="13" font-weight="500" fill="#1E1B4B">Generated 4 active recall cards &amp; verified consensus invariants.</text>
-      <text x="16" y="78" font-size="12" font-weight="600" fill="#0891B2">✓ Grounded in Tanenbaum Distributed Systems p. 184</text>
+      <rect width="572" height="96" rx="12" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.5" />
+      <text x="16" y="28" font-size="12" font-weight="800" fill="#0284C7">⚡ STUDYSYNC AI SYNTHESIS</text>
+      <text x="16" y="54" font-size="13" font-weight="500" fill="#082F49">Generated 4 active recall cards &amp; verified consensus invariants.</text>
+      <text x="16" y="78" font-size="12" font-weight="600" fill="#0369A1">✓ Grounded in Tanenbaum Distributed Systems p. 184</text>
     </g>
 
     <!-- Flashcards Mini Grid -->
     <g transform="translate(24, 264)">
       <!-- Card 1 -->
-      <rect width="276" height="84" rx="10" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <text x="16" y="24" font-size="11" font-weight="700" fill="#0891B2">CARD #1 • CORE CONCEPT</text>
-      <text x="16" y="48" font-size="13" font-weight="600" fill="#1E1B4B">What guarantees safety in Phase 2</text>
-      <text x="16" y="66" font-size="13" font-weight="600" fill="#1E1B4B">of Paxos protocol?</text>
+      <rect width="276" height="84" rx="10" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+      <text x="16" y="24" font-size="11" font-weight="700" fill="#0284C7">CARD #1 • CORE CONCEPT</text>
+      <text x="16" y="48" font-size="13" font-weight="600" fill="#082F49">What guarantees safety in Phase 2</text>
+      <text x="16" y="66" font-size="13" font-weight="600" fill="#082F49">of Paxos protocol?</text>
 
       <!-- Card 2 -->
-      <rect x="296" width="276" height="84" rx="10" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <text x="312" y="24" font-size="11" font-weight="700" fill="#0891B2">CARD #2 • EXAM TRAP</text>
-      <text x="312" y="48" font-size="13" font-weight="600" fill="#1E1B4B">Why does 2PC block while Paxos</text>
-      <text x="312" y="66" font-size="13" font-weight="600" fill="#1E1B4B">continues making progress?</text>
+      <rect x="296" width="276" height="84" rx="10" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+      <text x="312" y="24" font-size="11" font-weight="700" fill="#0284C7">CARD #2 • EXAM TRAP</text>
+      <text x="312" y="48" font-size="13" font-weight="600" fill="#082F49">Why does 2PC block while Paxos</text>
+      <text x="312" y="66" font-size="13" font-weight="600" fill="#082F49">continues making progress?</text>
     </g>
   </g>
 
-  <!-- ==================== 3 FEATURE CARDS (Auto Layout Grid: 32px gap) ==================== -->
+  <!-- ==================== 3 FEATURE CARDS (LIGHT BLUE & WHITE) ==================== -->
   <g transform="translate(80, 560)">
-    <text x="640" y="0" font-size="12" font-weight="800" fill="#7C3AED" text-anchor="middle" letter-spacing="1">BUILT FOR ACADEMIC EXCELLENCE</text>
-    <text x="640" y="32" font-size="30" font-weight="800" fill="#1E1B4B" text-anchor="middle">Everything You Need to Ace Your Semester</text>
+    <text x="640" y="0" font-size="12" font-weight="800" fill="#0284C7" text-anchor="middle" letter-spacing="1">BUILT FOR ACADEMIC EXCELLENCE</text>
+    <text x="640" y="32" font-size="30" font-weight="800" fill="#082F49" text-anchor="middle">Everything You Need to Ace Your Semester</text>
 
     <!-- Feature Card 1 -->
     <g transform="translate(0, 70)" filter="url(#cardShadow)">
-      <rect width="405" height="230" rx="18" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <rect x="24" y="24" width="48" height="48" rx="12" fill="#EDE9FE" />
+      <rect width="405" height="230" rx="18" fill="#FFFFFF" fill-opacity="0.9" stroke="#BAE6FD" stroke-width="1.5" />
+      <rect x="24" y="24" width="48" height="48" rx="12" fill="#E0F2FE" />
       <text x="48" y="54" font-size="22" text-anchor="middle">🎙️</text>
-      <rect x="88" y="32" width="120" height="24" rx="12" fill="#EDE9FE" />
-      <text x="148" y="48" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">AUDIO AI ENGINE</text>
-      <text x="24" y="105" font-size="18" font-weight="700" fill="#1E1B4B">Lecture-to-Flashcard</text>
+      <rect x="88" y="32" width="130" height="24" rx="12" fill="#E0F2FE" />
+      <text x="153" y="48" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">AUDIO AI ENGINE</text>
+      <text x="24" y="105" font-size="18" font-weight="700" fill="#082F49">Lecture-to-Flashcard</text>
       <text x="24" y="138" font-size="14" font-weight="400" fill="#475569">
         <tspan x="24" dy="0">Upload any 2-hour lecture audio. StudySync</tspan>
         <tspan x="24" dy="22">eliminates tangents and generates spaced</tspan>
@@ -157,12 +157,12 @@
 
     <!-- Feature Card 2 -->
     <g transform="translate(437, 70)" filter="url(#cardShadow)">
-      <rect width="405" height="230" rx="18" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <rect x="24" y="24" width="48" height="48" rx="12" fill="#EDE9FE" />
+      <rect width="405" height="230" rx="18" fill="#FFFFFF" fill-opacity="0.9" stroke="#BAE6FD" stroke-width="1.5" />
+      <rect x="24" y="24" width="48" height="48" rx="12" fill="#E0F2FE" />
       <text x="48" y="54" font-size="22" text-anchor="middle">👥</text>
-      <rect x="88" y="32" width="150" height="24" rx="12" fill="#EDE9FE" />
-      <text x="163" y="48" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">COLLABORATIVE CANVAS</text>
-      <text x="24" y="105" font-size="18" font-weight="700" fill="#1E1B4B">Real-time Peer Study Rooms</text>
+      <rect x="88" y="32" width="165" height="24" rx="12" fill="#E0F2FE" />
+      <text x="170" y="48" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">COLLABORATIVE CANVAS</text>
+      <text x="24" y="105" font-size="18" font-weight="700" fill="#082F49">Real-time Peer Study Rooms</text>
       <text x="24" y="138" font-size="14" font-weight="400" fill="#475569">
         <tspan x="24" dy="0">Host group study circles on an infinite canvas</tspan>
         <tspan x="24" dy="22">with synchronized AI prompts, live annotations,</tspan>
@@ -172,12 +172,12 @@
 
     <!-- Feature Card 3 -->
     <g transform="translate(875, 70)" filter="url(#cardShadow)">
-      <rect width="405" height="230" rx="18" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-      <rect x="24" y="24" width="48" height="48" rx="12" fill="#EDE9FE" />
+      <rect width="405" height="230" rx="18" fill="#FFFFFF" fill-opacity="0.9" stroke="#BAE6FD" stroke-width="1.5" />
+      <rect x="24" y="24" width="48" height="48" rx="12" fill="#E0F2FE" />
       <text x="48" y="54" font-size="22" text-anchor="middle">📖</text>
-      <rect x="88" y="32" width="145" height="24" rx="12" fill="#EDE9FE" />
-      <text x="160" y="48" font-size="11" font-weight="700" fill="#7C3AED" text-anchor="middle">VERIFIABLE ACCURACY</text>
-      <text x="24" y="105" font-size="18" font-weight="700" fill="#1E1B4B">Textbook Citations</text>
+      <rect x="88" y="32" width="155" height="24" rx="12" fill="#E0F2FE" />
+      <text x="165" y="48" font-size="11" font-weight="700" fill="#0284C7" text-anchor="middle">VERIFIABLE ACCURACY</text>
+      <text x="24" y="105" font-size="18" font-weight="700" fill="#082F49">Textbook Citations</text>
       <text x="24" y="138" font-size="14" font-weight="400" fill="#475569">
         <tspan x="24" dy="0">Zero AI hallucinations. Every formula,</tspan>
         <tspan x="24" dy="22">explanation, and quiz question is backed by</tspan>
@@ -188,8 +188,8 @@
 
   <!-- ==================== FOOTER ==================== -->
   <g transform="translate(0, 895)">
-    <rect width="1440" height="65" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1" />
-    <text x="80" y="38" font-size="13" font-weight="500" fill="#475569">© 2026 StudySync AI • Designed for UI/UX Using Figma in IPS • Built with Auto Layout</text>
-    <text x="1360" y="38" font-size="13" font-weight="600" fill="#7C3AED" text-anchor="end">Figma Desktop 1440px Specification</text>
+    <rect width="1440" height="65" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1" />
+    <text x="80" y="38" font-size="13" font-weight="500" fill="#475569">© 2026 StudySync AI • Light Blue &amp; White Frosted Glass Palette • Designed in Figma Auto Layout</text>
+    <text x="1360" y="38" font-size="13" font-weight="700" fill="#0284C7" text-anchor="end">Figma Desktop 1440px Specification</text>
   </g>
 </svg>

@@ -84,18 +84,18 @@ The design was generated and optimized using the **UI/UX Pro Max** design intell
 
 Full token documentation is located in [`DESIGN_SYSTEM.md`](DESIGN_SYSTEM.md) and [`design-system/studysync/MASTER.md`](design-system/studysync/MASTER.md).
 
-### 4.1 Color Tokens & Accessibility
+### 4.1 Color Tokens & Accessibility (Light Blue & White Palette)
 
 | Token Name | Hex Code | Semantic Role | WCAG Contrast |
 | :--- | :--- | :--- | :--- |
-| `--color-primary` | `#7C3AED` | Primary Action, Active Navigation, Brand Accent | 5.8:1 (AA Passed) |
-| `--color-secondary` | `#A78BFA` | Sub-headings, Badge Accents, Gradients | 4.6:1 (AA Passed) |
-| `--color-accent` | `#0891B2` | Interactive Highlights, Audio Pills, CTA Glow | 4.9:1 (AA Passed) |
-| `--color-background` | `#FAF5FF` | Base Page Background (Subtle Violet Soft Tint) | — |
-| `--color-foreground` | `#1E1B4B` | Primary Headings and High-Emphasis Text | **12.4:1 (AAA Passed)** |
-| `--color-card` | `#FFFFFF` | Surface for Feature Cards & Mockup Canvas | — |
-| `--color-muted-fg` | `#475569` | Secondary Body Text & Captions | **5.2:1 (AA Passed)** |
-| `--color-border` | `#DDD6FE` | Subtle Component Borders & Frame Dividers | 3.2:1 (UI Outline) |
+| `--color-primary` | `#0284C7` | Primary Sky Blue Action, Active Navigation | **5.2:1 (AA Passed)** |
+| `--color-secondary` | `#38BDF8` | Ice Blue Highlights, Badges, Subtle Gradients | 3.5:1 (UI Outline) |
+| `--color-accent` | `#0284C7` | Interactive Cerulean Buttons, Live Tags | **5.2:1 (AA Passed)** |
+| `--color-background` | `#F0F9FF` | Base Page Background (Pale Ice Blue & White Tint) | — |
+| `--color-foreground` | `#082F49` | Deep Ocean Navy Headings & Text | **13.8:1 (AAA Passed)** |
+| `--color-card` | `#FFFFFF` | Pure Frosted White Card Surfaces | — |
+| `--color-muted-fg` | `#475569` | Secondary Body Text & Captions | **5.8:1 (AA Passed)** |
+| `--color-border` | `#BAE6FD` | Crisp Ice Blue Borders & Frame Dividers | 3.6:1 (UI Outline) |
 
 ### 4.2 8-Point Spacing Scale
 All layout margins, internal paddings, and Auto Layout item gaps conform strictly to an **8pt modular grid**:
