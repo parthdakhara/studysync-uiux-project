@@ -6,16 +6,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
 
-  // 1. Theme Switcher (Dark / Light Mode)
+  // 1. Theme Switcher (Default to Clean Pure White)
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('studysync-theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  if (savedTheme) {
-    root.setAttribute('data-theme', savedTheme);
-  } else if (systemPrefersDark) {
-    root.setAttribute('data-theme', 'dark');
-  }
+  
+  // Set default theme to light (pure white background)
+  root.setAttribute('data-theme', 'light');
+  localStorage.setItem('studysync-theme', 'light');
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {

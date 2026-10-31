@@ -21,33 +21,33 @@
   --color-accent-light: #BAE6FD;
   --color-accent-glow: rgba(56, 189, 248, 0.35);
 
-  --color-background: #F0F9FF;       /* Pale Ice Light Blue & White Tint */
+  --color-background: #FFFFFF;       /* Pure Crisp White Background */
   --color-foreground: #082F49;       /* Deep Ocean Navy (WCAG AAA 13.8:1) */
 
-  --color-card: #FFFFFF;             /* Crisp Pure White Surface */
+  --color-card: #FFFFFF;             /* Pure White Surface */
   --color-card-foreground: #082F49;
   
-  --color-muted: #E0F2FE;            /* Very Soft Ice Blue */
+  --color-muted: #F0F9FF;            /* Soft Sky Pill */
   --color-muted-foreground: #475569; /* Slate Gray (WCAG AA 5.8:1) */
 
-  --color-border: #BAE6FD;           /* Crisp Ice Blue Border */
-  --color-border-subtle: #E0F2FE;
-  --color-border-glow: rgba(2, 132, 199, 0.3);
+  --color-border: #E0F2FE;           /* Subtle Light Blue Border */
+  --color-border-subtle: #F0F9FF;
+  --color-border-glow: rgba(2, 132, 199, 0.25);
 
   --color-destructive: #DC2626;
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-ring: #0284C7;
 
-  /* ==================== GLASSMORPHISM TOKENS (LIGHT BLUE & WHITE) ==================== */
-  --glass-surface: rgba(255, 255, 255, 0.72);
-  --glass-surface-subtle: rgba(240, 249, 255, 0.55);
-  --glass-surface-hover: rgba(255, 255, 255, 0.92);
-  --glass-surface-heavy: rgba(255, 255, 255, 0.96);
+  /* ==================== GLASSMORPHISM TOKENS (LIGHT BLUE & PURE WHITE) ==================== */
+  --glass-surface: rgba(255, 255, 255, 0.88);
+  --glass-surface-subtle: rgba(240, 249, 255, 0.75);
+  --glass-surface-hover: #FFFFFF;
+  --glass-surface-heavy: #FFFFFF;
 
-  --glass-border: rgba(186, 230, 253, 0.65);
-  --glass-border-subtle: rgba(224, 242, 254, 0.5);
-  --glass-border-active: rgba(2, 132, 199, 0.45);
+  --glass-border: rgba(186, 230, 253, 0.8);
+  --glass-border-subtle: rgba(224, 242, 254, 0.7);
+  --glass-border-active: rgba(2, 132, 199, 0.5);
 
   --glass-blur: 24px;
   --glass-saturate: 190%;
@@ -95,40 +95,40 @@
   --header-height: 76px;
 }
 
-/* ==================== DARK MODE: MIDNIGHT ICE BLUE ==================== */
+/* ==================== CLEAN WHITE THEME VARIANT ==================== */
 [data-theme="dark"] {
-  --color-primary: #38BDF8;
-  --color-primary-hover: #7DD3FC;
-  --color-primary-light: rgba(56, 189, 248, 0.15);
-  --color-primary-glow: rgba(56, 189, 248, 0.4);
+  --color-primary: #0284C7;
+  --color-primary-hover: #0369A1;
+  --color-primary-light: #E0F2FE;
+  --color-primary-glow: rgba(2, 132, 199, 0.35);
 
-  --color-secondary: #7DD3FC;
-  --color-secondary-hover: #BAE6FD;
+  --color-secondary: #38BDF8;
+  --color-secondary-hover: #0EA5E9;
 
   --color-accent: #0284C7;
-  --color-accent-hover: #38BDF8;
-  --color-accent-glow: rgba(2, 132, 199, 0.4);
+  --color-accent-hover: #0369A1;
+  --color-accent-glow: rgba(56, 189, 248, 0.35);
 
-  --color-background: #030B17;       /* Deep Midnight Navy */
-  --color-foreground: #F0F9FF;       /* Crisp Ice White */
+  --color-background: #FFFFFF;       /* Pure Crisp White */
+  --color-foreground: #082F49;       /* Deep Ocean Navy */
 
-  --color-card: #081B33;
-  --color-card-foreground: #F0F9FF;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #082F49;
 
-  --color-muted: #0D284C;
-  --color-muted-foreground: #94A3B8;
+  --color-muted: #F0F9FF;
+  --color-muted-foreground: #475569;
 
-  --color-border: #1E3A8A;
-  --color-border-subtle: #0F2847;
+  --color-border: #E0F2FE;
+  --color-border-subtle: #F0F9FF;
 
-  --glass-surface: rgba(8, 27, 51, 0.65);
-  --glass-surface-subtle: rgba(8, 27, 51, 0.45);
-  --glass-surface-hover: rgba(13, 40, 76, 0.82);
-  --glass-surface-heavy: rgba(11, 34, 64, 0.92);
+  --glass-surface: rgba(255, 255, 255, 0.92);
+  --glass-surface-subtle: rgba(240, 249, 255, 0.75);
+  --glass-surface-hover: #FFFFFF;
+  --glass-surface-heavy: #FFFFFF;
 
-  --glass-border: rgba(186, 230, 253, 0.15);
-  --glass-border-subtle: rgba(186, 230, 253, 0.08);
-  --glass-border-active: rgba(56, 189, 248, 0.5);
+  --glass-border: rgba(186, 230, 253, 0.8);
+  --glass-border-subtle: rgba(224, 242, 254, 0.7);
+  --glass-border-active: rgba(2, 132, 199, 0.5);
 
   --glass-specular: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 1px 0 rgba(56, 189, 248, 0.15);
   --glass-shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -178,8 +178,8 @@ body {
 .aurora-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.65;
+  filter: blur(120px);
+  opacity: 0.22;
   animation: floatOrb 18s ease-in-out infinite alternate;
 }
 
